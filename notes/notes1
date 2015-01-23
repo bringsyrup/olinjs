@@ -1,0 +1,40 @@
+TCP/IP (Transmission Control Protocol/Internet Protcol)
+* base level communication protocol from client to server (one computer to another)
+* each computer has ports available for connection, involves communication
+* we care about ports and IP addresses (used to find a computer acting as server)
+* ALL INTERNET DATA PACKETS trasfered with TCP/IP (other protocols on top, but they all have TCP/IP at base) 
+
+HTTP (Hyper Text Transfer Protocol)
+
+IP ==> TCP/UDP ==> HTTP/https/ftp/sftp  
+
+ex.
+                        REQUEST                                       RESPONSE
+           |                                      |
+    header | Get /              HTTP/1.1 (??)     | HTTP/1.1 200 OK (200 is ok, 400 is an error, 404 is another error, etc)
+           | Application-Type:  text/html         | Application:
+           | User-Agent:        Mozilla/5.0       | Content-type:
+           |                                      | Content-length:
+    _______|______________________________________|____________________________________________
+           |                                      |
+    body   | Search =                             | <html>
+           |                                      |   .
+           |                                      |   .
+           |                                      |   .
+           |                                      |   
+           |                                      | <html>
+
+HTTP REQUEST TYPES (probs don't memorize, just google it if you need it)
+
+    GET
+    POST 
+    PUT
+    HEAD
+    DELETE
+    TRACE
+    OPTIONS
+    CONNECT
+    PATCH
+
+DNS (Domain Name System)
+* associates domain name with IP address (so you can get a websites IP address) through registration with host company
